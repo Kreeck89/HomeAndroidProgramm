@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_create_todo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_window"
+    tools:context="miracleit.com.homeandroidprogramm.CreateTodoActivity">
+
+    <EditText
+        android:id="@+id/txt_id_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="147dp"
+        android:ems="10"
+        android:hint="todo id"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/txt_user_id_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_name_create"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="todo user id"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/txt_name_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_id_create"
+        android:layout_below="@+id/txt_id_create"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="todo name"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/btn_save_new_todo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/txt_user_id_create"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_todo"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btn_return"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/darker_gray"
+        android:text="X" />
+</RelativeLayout>
